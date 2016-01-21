@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
-* Студент: [Sergei Kutsev](https://htmlacademy.ru/profile/id70538).
-* Наставник: `Никита Рогатнев`.
+* Студент: [Сергей Куцев](https://htmlacademy.ru/profile/id70538).
+* Наставник: [Никита Рогатнев](https://htmlacademy.ru/profile/id86119).
 
 ---
 

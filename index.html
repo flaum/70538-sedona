@@ -2,11 +2,115 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
-    <title>HTML Academy: Седона</title>
+    <title>Седона: Главная страница</title>
   </head>
   <body>
-
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive">Базовый HTML и CSS</a>».</p>
-
+    <header>
+      <ul class="main-navigation">
+        <li><a href="#">Информация</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><div class="header-logo"><img src="http://placehold.it/150x100"></div></li>
+        <li><a href="#">Карта штата</a></li>
+        <li><a href="#">Гостиницы</a></li>
+      </ul>
+    </header>
+    <section class="head-image">
+      <img src="http://placehold.it/150x100">
+    </section>
+    <main>
+      <section class="features-text">
+        <h2>Седона - небольшой городок в Аризоне заслуживающий большего!</h2>
+        <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
+      </section>
+      <section class="features-line-1">
+        <div class="text blue one-third">
+          <h2>Настоящий городок</h2>
+          <p>- #1 -</p>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
+        </div>
+        <div class="image-two-third">
+          <img src="http://placehold.it/150x100">
+        </div>
+      </section>
+      <section class="features-line-2">
+        <div class="house one-third">
+          <h2>Жилье</h2>
+          <p>Рекомендуем пожить в настоящем мотеле, все как в кино!</p>
+        </div>
+        <div class="food one-third">
+          <h2>Еда</h2>
+          <p>Всегда заказывайте фирменный бургегр, вы не разочаруетесь!</p>
+        </div>
+        <div class="souvenir one-third">
+          <h2>Сувениры</h2>
+          <p>Не тольео китайского, но и местного производства!</p>
+        </div>
+      </section>
+      <section class="features-line-3">
+        <div class="image-two-third">
+          <img src="http://placehold.it/150x100">
+        </div>
+        <div class="text blue one-third">
+          <h2>Там есть мост Дьявола</h2>
+          <p>- #2 -</p>
+          <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+        </div>
+      </section>
+      <section class="features-line-4">
+        <div class="text one-third">
+          <h2>Небольшая площадь</h2>
+          <p>- #3 -</p>
+          <p>Все достопримечательности находятся очень близко</p>
+        </div>
+        <div class="text one-third">
+          <h2>Красивая дорога</h2>
+          <p>- #4 -</p>
+          <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+        </div>
+        <div class="text one-third">
+          <h2>Мало туристов</h2>
+          <p>- #5 -</p>
+          <p>Большинство едет в Гранд каньон и толпится там</p>
+        </div>
+      </section>
+      <section class="interested">
+        <b>Заинтересовались?</b>
+        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <form class="search-form" action="/echo" method="get">
+          <div class="form-title">
+            <p>Поиск гостиницы в Седоне</p>
+          </div>
+          <label for="day-in">Дата заезда</label>
+          <input type="date" id="day-in" name="in" class="in-date">
+          <label for="day-out">Дата выезда</label>
+          <input type="date" id="day-out" name="out" class="out-date">
+          <div class="half-width">
+            <label for="adult">Взрослые</label>
+            <input type="number" name="adults" id="adult" step="1">
+          </div>
+          <div class="half-width">
+            <label for="kid">Дети</label>
+            <input type="number" name="kids" id="kid" step="1">
+          </div>
+          <button class="btn">Найти</button>
+        </form>
+      </section>
+      <section class="map">
+        <img src="http://placehold.it/150x100">
+      </section>
+    </main>
+    <footer>
+      <div class="one-third insta">
+        <p>#visitsedona</p>
+      </div>
+      <div class="one-third social-btns">
+        <a class="social social-tw" href="#">Tw</a>
+        <a class="social social-fb" href="#">Fb</a>
+        <a class="social social-yt" href="#">Yt</a>
+      </div>
+      <div class="one-third developer">
+        <img src="http://placehold.it/150x100">
+      </div>
+    </footer>
   </body>
 </html>

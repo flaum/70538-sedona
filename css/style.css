@@ -5,6 +5,8 @@ body {
   font-family: "PT Sans", "Arial", sans-serif;
   text-align: center;
   text-transform: uppercase;
+  color: #000000;
+  background: #f2f2f2;
 }
 
 h2 {
@@ -32,4 +34,12 @@ span.match-title {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
+}
+
+section.features-blue{
+  color: #ffffff;
+}
+
+section.filter {
+  color: #ffffff;
 }

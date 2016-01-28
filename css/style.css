@@ -14,32 +14,32 @@ h2 {
   font-size: 21px;
 }
 
-h1.dwelling-title {
+.dwelling-title {
   line-height: 26px;
 }
 
-h2.features-title {
+.features-title {
   line-height: 26px;
 }
 
-h3.interested-title {
+.interested-title {
   line-height: 24px;
 }
 
-p.interested-text {
+.interested-text {
   line-height: 24px;
 }
 
-span.match-title {
+.match-title {
   font-weight: bold;
   font-size: 21px;
   line-height: 26px;
 }
 
-section.features-blue{
+.features-blue{
   color: #ffffff;
 }
 
-section.filter {
+.filter {
   color: #ffffff;
 }

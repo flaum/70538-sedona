@@ -1,3 +1,4 @@
+html,
 body {
   font-style: normal;
   font-size: 14px;
@@ -42,4 +43,38 @@ h2 {
 
 .filter {
   color: #ffffff;
+}
+
+.page-header {
+  width: 1200px;
+  margin: 0 10px;
+  outline: 1px solid red;
+}
+
+.main-navigation {
+  display: block;
+  list-style: none;
+  padding: 0;
+  outline: 3px dashed yellow;
+}
+
+.main-navigation li {
+  display: inline-block;
+  width: 12%;
+  padding: 15px 4%;
+  line-height: 26px;
+  vertical-align: top;
+  background-color: rgba(255, 0, 0, 0.5);
+  outline: 1px solid blue;
+  /*box-sizing: border-box;*/
+}
+
+.header-logo a{
+  position: absolute;
+  top: 13px;
+  left: 540px;
+}
+
+.head-image {
+  width: 1200px;
 }

@@ -4,7 +4,6 @@ body {
   font-size: 14px;
   line-height: 21px;
   font-family: "PT Sans", "Arial", sans-serif;
-  text-align: center;
   text-transform: uppercase;
   color: #000000;
   background: #f2f2f2;
@@ -15,18 +14,31 @@ h2 {
   font-size: 21px;
 }
 
-.dwelling-title {
+header,
+main,
+footer {
+  margin: 0 auto;
+  width: 1200px;
+}
+
+header,
+footer {
+  text-align: center;
+}
+
+.clearfix:after{
+    content:'';
+    display:table;
+    clear:both;
+}
+
+.dwelling-title,
+.features-title,
+.match-title {
   line-height: 26px;
 }
 
-.features-title {
-  line-height: 26px;
-}
-
-.interested-title {
-  line-height: 24px;
-}
-
+.interested-title,
 .interested-text {
   line-height: 24px;
 }
@@ -34,11 +46,11 @@ h2 {
 .match-title {
   font-weight: bold;
   font-size: 21px;
-  line-height: 26px;
 }
 
 .features-blue{
   color: #ffffff;
+  background-color: #81b3d2;
 }
 
 .filter {
@@ -46,8 +58,6 @@ h2 {
 }
 
 .page-header {
-  width: 1200px;
-  margin: 0 10px;
   outline: 1px solid red;
 }
 
@@ -66,15 +76,98 @@ h2 {
   vertical-align: top;
   background-color: rgba(255, 0, 0, 0.5);
   outline: 1px solid blue;
-  /*box-sizing: border-box;*/
 }
 
 .header-logo a{
-  position: absolute;
-  top: 13px;
-  left: 540px;
+  position: relative;
+  /*top: 13px;*/
+  /*left: 51px;*/
 }
 
-.head-image {
-  width: 1200px;
+/* !!!index.html!!! */
+
+.top-image-container {
+  outline: 1px solid violet;
+}
+
+.top-image {
+  padding-top: 76px;
+  padding-bottom: 80px;
+  outline: 1px solid blue;
+}
+
+.top-background-image {
+  height: 508px;
+  background: url("img/mountains-filter.jpg") no-repeat 0 0;
+}
+
+.features-promo {
+  outline: 1px solid green;
+}
+
+.one-third {
+  display: inline-block;
+  width: 400px;
+}
+
+.text {
+  width: 360px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  vertical-align: top;
+  outline: 1px solid red;
+}
+
+.two-third-image {
+  display: inline-block;
+  width: 800px;
+  vertical-align: top;
+}
+
+/* !!!catalog.html!!! */
+
+.one-fifth {
+  float: left;
+  width: 20%;
+}
+
+.two-fifth {
+  float: right;
+  width: 40%;
+}
+
+.filter {
+  background: url("img/mountains-filter.jpg") no-repeat;
+}
+
+.inline-block {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.sorting-filters {
+  padding: 0;
+  margin:0;
+}
+
+.sorting-filters li {
+  list-style: none;
+}
+
+.sorting-btns {
+  float: right;
+}
+
+.hotel {
+  width: 111px;
+}
+
+.reserve {
+  width: 142px;
+}
+
+.ratio {
+  float: right;
 }

@@ -30,7 +30,7 @@
         </li>
       </ul>
     </header>
-    <main>
+    <main class="index-main">
       <section class="top-image-container">
         <div class="top-background-image">
           <img class="top-image" src="img/greeting-text.png" width="458" height="352" alt="Добро пожаловать в Седону">
@@ -41,14 +41,12 @@
         <p class="features-text">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
       </section>
       <section class="features-blue">
-        <div class="text one-third blue">
+        <div class="text one-third">
           <h2>Настоящий городок</h2>
-          <span class="features-number">&ndash; #1 &ndash;</span>
-          <p class="features-text">
-            Седона - не аттракцион для туристов, там течет своя жизнь
-          </p>
+          <span>&ndash; #1 &ndash;</span>
+          <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div><!--
-     --><div class="two-third-image">
+     --><div class="two-third">
           <img src="img/motel-cut.jpg" width="800" height="256" alt="Красивый вид">
         </div>
       </section>
@@ -76,10 +74,10 @@
         </div>
       </section>
       <section class="features-blue">
-        <div class="two-third-image">
+        <div class="two-third">
           <img src="img/canyon-cut.jpg" width="800" height="256" alt="Красивый вид">
         </div><!--
-     --><div class="text one-third blue">
+     --><div class="text one-third">
           <h2>Там есть мост Дьявола</h2>
           <span class="features-number">&ndash; #2 &ndash;</span>
           <p class="features-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
@@ -103,14 +101,19 @@
         </div>
       </section>
       <section class="interested">
-        <h3 class="interested-title">Заинтересовались?</h3>
-        <p class="interested-text">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-        <a class="form-title" href="./catalog.html">Поиск гостиницы в Седоне</a>
+        <div class="interested-container">
+          <h3>Заинтересовались?</h3>
+          <p>
+            Укажите предполагаемые даты поездки,<br>
+            и мы покажем вам лучшие предложения гостиниц в Седоне
+          </p>
+        </div>
+        <a class="search-btn" href="./catalog.html">Поиск гостиницы в Седоне</a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="day-in">Дата заезда</label>
-          <input class="in-date" type="date" id="day-in" name="in">
+          <input class="date" type="date" id="day-in" name="in">
           <label for="day-out">Дата выезда</label>
-          <input class="out-date" type="date" id="day-out" name="out">
+          <input class="date" type="date" id="day-out" name="out">
           <div class="half-width">
             <label for="adult">Взрослые</label>
             <input type="number" name="adults" id="adult" step="1">
@@ -118,7 +121,6 @@
           <div class="half-width">
             <label for="kid">Дети</label>
             <input type="number" name="kids" id="kid" step="1">
-          </div>
           <button class="btn">Найти</button>
         </form>
       </section>

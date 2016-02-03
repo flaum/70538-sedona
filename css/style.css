@@ -32,25 +32,9 @@ footer {
     clear:both;
 }
 
-.dwelling-title,
 .features-title,
 .match-title {
   line-height: 26px;
-}
-
-.interested-title,
-.interested-text {
-  line-height: 24px;
-}
-
-.match-title {
-  font-weight: bold;
-  font-size: 21px;
-}
-
-.features-blue{
-  color: #ffffff;
-  background-color: #81b3d2;
 }
 
 .filter {
@@ -86,6 +70,10 @@ footer {
 
 /* !!!index.html!!! */
 
+.index-main {
+  text-align: center;
+}
+
 .top-image-container {
   outline: 1px solid violet;
 }
@@ -98,11 +86,21 @@ footer {
 
 .top-background-image {
   height: 508px;
-  background: url("img/mountains-filter.jpg") no-repeat 0 0;
+  background: url("../img/mountains.jpg") no-repeat 0 0;
 }
 
 .features-promo {
   outline: 1px solid green;
+}
+
+.features-blue{
+  color: #ffffff;
+  background-color: #81b3d2;
+  outline: 1px solid green;
+}
+
+.features-white {
+  background: #ffffff;
 }
 
 .one-third {
@@ -111,19 +109,80 @@ footer {
 }
 
 .text {
-  width: 360px;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 400px;
+  padding: 50px 40px;
   vertical-align: top;
+  box-sizing: border-box;
   outline: 1px solid red;
 }
 
-.two-third-image {
+.two-third {
   display: inline-block;
   width: 800px;
-  vertical-align: top;
+  outline: 1px dashed yellow;
+}
+
+.interested {
+  background: #ffffff;
+}
+
+.interested-container {
+  width: 568px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  outline: 1px solid brown;
+}
+
+.interested-container h3 {
+  line-height: 24px;
+  font-size: 22px;
+  padding-top: 55px;
+}
+
+.interested-container p {
+  line-height: 24px;
+}
+
+.search-btn {
+  display: block;
+  width: 568px;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 30px 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  background: #766357;
+}
+
+.search-form {
+  width: 568px;
+  margin: 0 auto;
+  text-align: left;
+  font-weight: bold;
+}
+
+.search-form label {
+  margin-left: 55px;
+}
+
+.search-form .date {
+  /*margin-right: 55px;*/
+  width: 345px;
+}
+
+.search-form input[type="number"] {
+  width: 114px;
+}
+
+.half-width {
+  display: inline-block;
+}
+
+.search-form .btn {
+  display: block;
+  margin: 0 auto;
 }
 
 /* !!!catalog.html!!! */
@@ -139,20 +198,34 @@ footer {
 }
 
 .filter {
-  background: url("img/mountains-filter.jpg") no-repeat;
+  background: url("../img/mountains-filter.jpg") no-repeat;
 }
 
-.inline-block {
+.results {
+
+}
+
+.match {
   display: inline-block;
-  vertical-align: top;
+}
+
+.match span {
+  font-weight: bold;
+  font-size: 21px;
+}
+
+.sorting {
+  display: inline-block;
 }
 
 .sorting-filters {
+  display: inline-block;
   padding: 0;
   margin:0;
 }
 
 .sorting-filters li {
+  display: inline-block;
   list-style: none;
 }
 
@@ -160,11 +233,25 @@ footer {
   float: right;
 }
 
+.photo {
+  display: inline-block;
+}
+
+.description {
+  display: inline-block;
+}
+
+.description h1 {
+  line-height: 26px;
+}
+
 .hotel {
+  display: inline-block;
   width: 111px;
 }
 
 .reserve {
+  display: inline-block;
   width: 142px;
 }
 

@@ -1,3 +1,7 @@
+/**{
+outline: 1px solid red;
+}*/
+
 html,
 body {
   font-style: normal;
@@ -7,6 +11,10 @@ body {
   text-transform: uppercase;
   color: #000000;
   background: #f2f2f2;
+}
+
+h1, h2, h3, ul{
+  margin: 0;
 }
 
 h2 {
@@ -19,6 +27,7 @@ main,
 footer {
   margin: 0 auto;
   width: 1200px;
+  padding: 0 6%;
 }
 
 header,
@@ -42,14 +51,14 @@ footer {
 }
 
 .page-header {
-  outline: 1px solid red;
+
 }
 
 .main-navigation {
   display: block;
   list-style: none;
   padding: 0;
-  outline: 3px dashed yellow;
+  background-color: #ffffff;
 }
 
 .main-navigation li {
@@ -58,30 +67,59 @@ footer {
   padding: 15px 4%;
   line-height: 26px;
   vertical-align: top;
-  background-color: rgba(255, 0, 0, 0.5);
-  outline: 1px solid blue;
+}
+
+.main-navigation a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.main-navigation a:hover {
+  color: #81b3d2;
+}
+
+.main-navigation a:active {
+  color: #c1c1c1;
+}
+
+.main-navigation .current {
+  color: #766357;
+}
+
+.main-navigation .current:hover {
+  color: #604e43;
+}
+
+.main-navigation .current:active {
+  color: #d6d0cc;
+}
+
+.main-navigation .header-logo {
+  padding: 0 4%;
+  font-size: 0;
+  line-height: 0;
 }
 
 .header-logo a{
   position: relative;
-  /*top: 13px;*/
-  /*left: 51px;*/
 }
 
 /* !!!index.html!!! */
 
 .index-main {
+  margin-top: -14px;
   text-align: center;
 }
 
 .top-image-container {
-  outline: 1px solid violet;
+
 }
 
 .top-image {
   padding-top: 76px;
   padding-bottom: 80px;
-  outline: 1px solid blue;
 }
 
 .top-background-image {
@@ -90,7 +128,7 @@ footer {
 }
 
 .features-promo {
-  outline: 1px solid green;
+
 }
 
 .features-blue{
@@ -106,6 +144,7 @@ footer {
 .one-third {
   display: inline-block;
   width: 400px;
+  vertical-align: top;
 }
 
 .text {
@@ -113,13 +152,13 @@ footer {
   padding: 50px 40px;
   vertical-align: top;
   box-sizing: border-box;
-  outline: 1px solid red;
 }
 
 .two-third {
   display: inline-block;
   width: 800px;
-  outline: 1px dashed yellow;
+  vertical-align: top;
+  line-height: 0;
 }
 
 .interested {
@@ -185,28 +224,80 @@ footer {
   margin: 0 auto;
 }
 
-/* !!!catalog.html!!! */
-
-.one-fifth {
-  float: left;
-  width: 20%;
+.map{
+  background: url(../img/map.jpg) 50% 0 no-repeat;
+  height:593px;
 }
 
-.two-fifth {
-  float: right;
-  width: 40%;
+.map iframe{
+  border: 0;
+  height:593px;
+  width: 100%;
+}
+
+/* !!!catalog.html!!! */
+
+.catalog-main {
+  margin-top: -14px;
 }
 
 .filter {
-  background: url("../img/mountains-filter.jpg") no-repeat;
+  background: #4b769e url("../img/mountains-filter.jpg") no-repeat;
+}
+
+.one-fourth {
+  display: inline-block;
+  width: 25%;
+  vertical-align: top;
+  padding: 30px 10px;
+  padding-left: 26px;
+  box-sizing: border-box;
+}
+
+.one-fourth:first-child {
+  padding-left: 67px;
+}
+
+.two-fourth {
+  display: inline-block;
+  width: 50%;
+  padding: 30px 10px;
+  padding-right: 45px;
+  vertical-align: top;
+  box-sizing: border-box;
+}
+
+.right{
+  float: right;
+}
+
+.filter-column-title {
+  margin-bottom: 25px;
+}
+
+.check:not(:last-child) {
+  margin-bottom: 25px;
 }
 
 .results {
 
 }
 
+.match, .photo{
+  width: 235px;
+}
+
+.sorting, .description{
+  width: 780px;
+}
+
+.sorting-btns, .ratio{
+  width: 185px;
+}
+
 .match {
   display: inline-block;
+  vertical-align: top;
 }
 
 .match span {
@@ -216,29 +307,35 @@ footer {
 
 .sorting {
   display: inline-block;
+  vertical-align: top;
 }
 
 .sorting-filters {
   display: inline-block;
   padding: 0;
   margin:0;
+  vertical-align: top;
 }
 
 .sorting-filters li {
   display: inline-block;
   list-style: none;
+  vertical-align: top;
 }
 
 .sorting-btns {
-  float: right;
+  display: inline-block;
+  vertical-align: top;
 }
 
 .photo {
   display: inline-block;
+  vertical-align: top;
 }
 
 .description {
   display: inline-block;
+  vertical-align: top;
 }
 
 .description h1 {
@@ -248,11 +345,13 @@ footer {
 .hotel {
   display: inline-block;
   width: 111px;
+  vertical-align: top;
 }
 
 .reserve {
   display: inline-block;
   width: 142px;
+  vertical-align: top;
 }
 
 .ratio {

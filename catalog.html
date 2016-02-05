@@ -5,6 +5,7 @@
     <title>Страница поиска: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header>
@@ -15,38 +16,38 @@
      --><li>
           <a href="#">Фото и видео</a>
         </li><!--
-     --><li>
-          <div class="header-logo">
-            <a href="./index.html">
-              <img src="img/logo-small.png" width="138" height="70" alt="Седона">
-            </a>
-          </div>
+     --><li class="header-logo">
+          <a href="./index.html">
+            <img src="img/logo-small.png" width="138" height="70" alt="Седона">
+          </a>
         </li><!--
      --><li>
           <a href="#">Карта штата</a>
         </li><!--
      --><li>
-          <a href="#">Гостиницы</a>
+          <a class="current" href="./catalog.html">Гостиницы</a>
         </li>
       </ul>
     </header>
-    <main>
-      <section class="filter clearfix">
+    <main class="catalog-main">
+      <section class="filter">
         <form class="filter-menu" action="https://echo.htmlacademy.ru" method="post">
-          <div class="one-fifth">
+          <div class="one-fourth">
             <h2 class="filter-column-title">Инфраструктура:</h2>
             <div class="check">
               <input type="checkbox" id="pool" name="waterpool" checked>
               <label for="pool">Бассейн</label>
             </div>
+            <div class="check">
               <input type="checkbox" id="parking" name="parking-place">
               <label for="parking">Паркинг</label>
+            </div>
             <div class="check">
               <input type="checkbox" id="wi-fi" name="internet">
               <label for="wi-fi">Wi-Fi</label>
             </div>
-          </div>
-          <div class="one-fifth">
+          </div><!--
+       --><div class="one-fourth">
             <h2 class="filter-column-title">Тип жилья:</h2>
             <div class="check">
               <input type="checkbox" id="hotel" name="hotel-room" checked>
@@ -60,15 +61,17 @@
               <input type="checkbox" id="apartment" name="flat" checked>
               <label for="apartment">Апартаменты</label>
             </div>
-          </div>
-          <div class="two-fifth">
-            <h2 class="filter-column-title">Стоимость в сутки(Р):</h2>
-            <div class="border range">
-              <span class="text-white">От 0</span>
-              <span class="text-white">До 3000</span>
+          </div><!--
+       --><div class="two-fourth clearfix">
+            <div class="right">
+              <h2 class="filter-column-title">Стоимость в сутки(Р):</h2>
+              <div class="border range">
+                <span class="text-white">От 0</span>
+                <span class="text-white">До 3000</span>
+              </div>
+              <input class="price-filter" type="range" name="price" min="0" max="3000">
+              <button class="btn show-btn" name="show-results">Показать</button>
             </div>
-            <input class="price-filter" type="range" name="price" min="0" max="3000">
-            <button class="btn show-btn" name="show-results">Показать</button>
           </div>
         </form>
       </section>
@@ -77,8 +80,8 @@
           <span class="match-title">Найдено: 3</span>
         </div><!--
      --><div class="sorting">
-          <span>Сортировка:</span>
-          <ul class="sorting-filters">
+          <span>Сортировка:</span><!--
+       --><ul class="sorting-filters">
             <li>
               <a class="active" href="#">По цене</a>
             </li><!--
@@ -91,8 +94,8 @@
           </ul>
         </div><!--
      --><div class="sorting-btns">
-          <a href="#">&#9650;</a>
-          <a href="#">&#9660;</a>
+          <a href="#">&#9650;</a><!--
+       --><a href="#">&#9660;</a>
         </div>
       </section>
       <article class="view-results">
@@ -100,12 +103,14 @@
           <img src="img/amara-resort-mini.jpg" width="135" height="90" alt="Amara Resort &amp; SPA">
         </div><!--
      --><div class="description">
-          <h1>Amara Resort &amp; SPA</h1>
+          <a href="#">
+            <h1>Amara Resort &amp; SPA</h1>
+          </a>
           <div class="hotel">
             <span>Гостиница</span>
             <a class="more-btn" href="#">Подробнее</a>
-          </div>
-          <div class="reserve">
+          </div><!--
+       --><div class="reserve">
             <span>От 3500 р.</span>
             <a class="reserve-btn" href="#">Забронировать</a>
           </div>
@@ -120,12 +125,14 @@
           <img src="img/desert-quail-mini.jpg" width="135" height="90" alt="Desert Quail Inn">
         </div><!--
      --><div class="description">
-          <h1>Desert Quail Inn</h1>
+          <a href="#">
+            <h1>Desert Quail Inn</h1>
+          </a>
           <div class="hotel">
             <span>Мотель</span>
             <a class="more-btn" href="#">Подробнее</a>
-          </div>
-          <div class="reserve">
+          </div><!--
+       --><div class="reserve">
             <span>От 2000 р.</span>
             <a class="reserve-btn" href="#">Забронировать</a>
           </div>
@@ -140,12 +147,14 @@
           <img src="img/villas-at-poco-mini.jpg" width="135" height="90" alt="Villas at Poco Diablo">
         </div><!--
      --><div class="description">
-          <h1 class="dwelling-title">Villas at Poco Diablo</h1>
+          <a href="#">
+            <h1 class="dwelling-title">Villas at Poco Diablo</h1>
+          </a>
           <div class="hotel">
             <span>Апартаменты</span>
             <a class="more-btn" href="#">Подробнее</a>
-          </div>
-          <div class="reserve">
+          </div><!--
+       --><div class="reserve">
             <span>От 4000 р.</span>
             <a class="reserve-btn" href="#">Забронировать</a>
           </div>
@@ -167,7 +176,9 @@
       </div><!--
    --><div class="one-third developer">
         <span>Website by</span>
-        <img src="img/htmlacademy-logo.png" width="113" height="39" alt="HTML Academy">
+        <a href="https://htmlacademy.ru/">
+          <img src="img/htmlacademy-logo.png" width="113" height="39" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>

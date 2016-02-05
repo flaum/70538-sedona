@@ -5,6 +5,7 @@
     <title>Седона: Главная страница</title>
     <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
     <header class="page-header">
@@ -15,18 +16,16 @@
       --><li>
           <a href="#">Фото и видео</a>
         </li><!--
-      --><li>
-          <div class="header-logo">
+      --><li class="header-logo">
             <a href="./index.html">
               <img src="img/logo-small.png" width="138" height="70" alt="Седона">
             </a>
-          </div>
         </li><!--
       --><li>
           <a href="#">Карта штата</a>
         </li><!--
       --><li>
-          <a href="#">Гостиницы</a>
+          <a href="./catalog.html">Гостиницы</a>
         </li>
       </ul>
     </header>
@@ -43,7 +42,7 @@
       <section class="features-blue">
         <div class="text one-third">
           <h2>Настоящий городок</h2>
-          <span>&ndash; #1 &ndash;</span>
+          <span>&ndash; №1 &ndash;</span>
           <p>Седона - не аттракцион для туристов, там течет своя жизнь</p>
         </div><!--
      --><div class="two-third">
@@ -79,24 +78,24 @@
         </div><!--
      --><div class="text one-third">
           <h2>Там есть мост Дьявола</h2>
-          <span class="features-number">&ndash; #2 &ndash;</span>
+          <span class="features-number">&ndash; №2 &ndash;</span>
           <p class="features-text">Да, по нему можно пройти! Если, конечно, вы осмелитесь</p>
         </div>
       </section>
       <section class="features-grey">
         <div class="text one-third">
           <h2>Небольшая площадь</h2>
-          <span class="features-number">&ndash; #3 &ndash;</span>
+          <span class="features-number">&ndash; №3 &ndash;</span>
           <p class="features-text">Все достопримечательности находятся очень близко</p>
         </div><!--
      --><div class="text one-third">
           <h2>Красивая дорога</h2>
-          <span class="features-number">&ndash; #4 &ndash;</span>
+          <span class="features-number">&ndash; №4 &ndash;</span>
           <p class="features-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
         </div><!--
      --><div class="text one-third">
           <h2>Мало туристов</h2>
-          <span class="features-number">&ndash; #5 &ndash;</span>
+          <span class="features-number">&ndash; №5 &ndash;</span>
           <p class="features-text">Большинство едет в Гранд каньон и толпится там</p>
         </div>
       </section>
@@ -108,7 +107,7 @@
             и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
         </div>
-        <a class="search-btn" href="./catalog.html">Поиск гостиницы в Седоне</a>
+        <a class="search-btn" href="#">Поиск гостиницы в Седоне</a>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
           <label for="day-in">Дата заезда</label>
           <input class="date" type="date" id="day-in" name="in">
@@ -121,11 +120,12 @@
           <div class="half-width">
             <label for="kid">Дети</label>
             <input type="number" name="kids" id="kid" step="1">
+          </div>
           <button class="btn">Найти</button>
         </form>
       </section>
       <section class="map">
-        <img src="img/map.jpg" width="1200" height="473" alt="Карта">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d432621.4651470261!2d-111.88860947457185!3d34.80444936799505!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1454599273280" frameborder="0" allowfullscreen></iframe>
       </section>
     </main>
     <footer>
@@ -139,7 +139,9 @@
       </div><!--
    --><div class="one-third developer">
         <span>Website by</span>
-        <img src="img/htmlacademy-logo.png" width="113" height="39" alt="HTML Academy">
+        <a href="https://htmlacademy.ru/">
+          <img src="img/htmlacademy-logo.png" width="113" height="39" alt="HTML Academy">
+        </a>
       </div>
     </footer>
   </body>

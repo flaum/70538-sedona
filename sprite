@@ -4,110 +4,20 @@
     display: block;
 }
 
-.sprite-calendar-black {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -10px;
-}
-
-.sprite-calendar-blue {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -52px;
-}
-
-.sprite-calendar-grey {
-    width: 21px;
-    height: 22px;
-    background-position: -10px -94px;
-}
-
 .sprite-htmlacademy-logo {
     width: 113px;
     height: 39px;
-    background-position: -10px -136px;
+    background-position: -10px -10px;
 }
 
 .sprite-htmlacademy-logo-blue {
     width: 113px;
     height: 39px;
-    background-position: -10px -195px;
+    background-position: -10px -69px;
 }
 
 .sprite-htmlacademy-logo-grey {
     width: 113px;
     height: 39px;
-    background-position: -10px -254px;
-}
-
-.sprite-minus-black {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -313px;
-}
-
-.sprite-minus-blue {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -336px;
-}
-
-.sprite-minus-grey {
-    width: 12px;
-    height: 3px;
-    background-position: -10px -359px;
-}
-
-.sprite-plus-black {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -382px;
-}
-
-.sprite-plus-blue {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -413px;
-}
-
-.sprite-plus-grey {
-    width: 11px;
-    height: 11px;
-    background-position: -10px -444px;
-}
-
-.sprite-social-fb {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -475px;
-}
-
-.sprite-social-fb-opacity {
-    width: 10px;
-    height: 19px;
-    background-position: -10px -514px;
-}
-
-.sprite-social-tw {
-    width: 17px;
-    height: 15px;
-    background-position: -10px -553px;
-}
-
-.sprite-social-tw-opacity {
-    width: 17px;
-    height: 15px;
-    background-position: -10px -588px;
-}
-
-.sprite-social-ytb {
-    width: 20px;
-    height: 16px;
-    background-position: -10px -623px;
-}
-
-.sprite-social-ytb-opacity {
-    width: 20px;
-    height: 16px;
-    background-position: -10px -659px;
+    background-position: -10px -128px;
 }

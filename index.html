@@ -116,24 +116,40 @@
             <div class="form-line clearfix">
               <label for="day-in">Дата заезда:</label>
               <input class="date field" type="text" id="day-in" name="in" value="14 апреля 2016">
-              <div class="sprite calendar"></div>
+              <div class="icon-calendar"></div>
             </div>
             <div class="form-line clearfix">
               <label for="day-out">Дата выезда:</label>
               <input class="date field" type="text" id="day-out" name="out" value="20 июля 2016">
-              <div class="sprite calendar"></div>
+              <div class="icon-calendar"></div>
             </div>
             <div class="form-line clearfix">
               <div class="half-width">
                 <label for="adult">Взрослые:</label>
-                <input class="unit field" type="number" name="adults" id="adult" step="1">
+                <div class="unit-container">
+                  <button class="btn plus-btn" type="button">
+                    <div class="icon-plus"></div>
+                  </button>
+                  <input class="unit field" type="number" name="adults" id="adult" step="1">
+                  <button class="btn minus-btn" type="button">
+                    <div class="icon-minus"></div>
+                  </button>
+                </div>
               </div><!--
            --><div class="half-width">
                 <label for="kid">Дети:</label>
-                <input class="unit field" type="number" name="kids" id="kid" step="1">
+                <div class="unit-container clearfix">
+                  <button class="btn plus-btn" type="button">
+                    <div class="icon-plus"></div>
+                  </button>
+                  <input class="unit field" type="number" name="kids" id="kid" step="1">
+                  <button class="btn minus-btn" type="button">
+                    <div class="icon-minus"></div>
+                  </button>
+                </div>
               </div>
             </div>
-            <button class="btn"><span>Найти</span></button>
+            <button class="find-btn" type="button"><span>Найти</span></button>
           </form>
         </div>
       </section>
@@ -146,9 +162,9 @@
         <a class="insta" href="#">#visitsedona</a>
       </div><!--
    --><div class="one-third social-btns">
-        <a class="social sprite social-tw" href="#">Twitter</a><!--
-     --><a class="social sprite social-fb" href="#">Facebook</a><!--
-     --><a class="social sprite social-ytb" href="#">Youtube</a>
+        <a class="social" href="#">Twitter<span class="icon-twitter"></span></a><!--
+     --><a class="social" href="#">Facebook<span class="icon-facebook"></span></a><!--
+     --><a class="social" href="#">Youtube<span class="icon-youtube"></span></a>
       </div><!--
    --><div class="one-third developer">
         <span>Website by</span>

@@ -72,11 +72,15 @@ footer {
   margin: 0 auto;
   width: 1200px;
   padding: 0 6%;
+  box-shadow: 0 0  #000000;
 }
 
 header,
 footer {
   text-align: center;
+  box-shadow:
+    -5px 0 #000000,
+    -5px 0 #000000;
 }
 
 .clearfix:after{
@@ -393,14 +397,14 @@ footer {
   font-size: 21px;
   line-height: 38px;
   color: #c2c2c2;
-  z-index: 20;
+  cursor: pointer;
 }
 
-.search-form .field:hover + .icon-calendar {
+.search-form .icon-calendar:hover {
   color: #000000;
 }
 
-.search-form .field:focus + .icon-calendar {
+.search-form .icon-calendar:active {
   color: #81b3d2;
 }
 

@@ -291,10 +291,6 @@ footer {
     margin-bottom: 24px;
 }
 
-.features-white .text-content:nth-child(2n) h2 {
-    margin-top: 30px;
-}
-
 .features-grey {
     background: #eeeeee;
 }

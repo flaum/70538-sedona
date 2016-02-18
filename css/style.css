@@ -72,7 +72,6 @@ header,
 footer {
     text-align: center;
 }
-
 .cover {
     box-shadow: 0 0 30px 10px #dbdbdb;
     width: 1200px;
@@ -284,6 +283,7 @@ footer {
 .icon img {
     display: inline-block;
     margin: 0 auto;
+    vertical-align: top;
 }
 
 .features-white h2 {
@@ -457,18 +457,9 @@ footer {
     background: #f2f2f2;
 }
 
-::-webkit-input-placeholder {
-    color: #000000;
-}
-
-::-moz-placeholder {
-    color: #000000;
-}
-
-:-moz-placeholder {
-    color: #000000;
-}
-
+::-webkit-input-placeholder,
+::-moz-placeholder,
+:-moz-placeholder,
 :-ms-input-placeholder {
     color: #000000;
 }
@@ -627,7 +618,7 @@ footer {
 }
 
 .filter h2 {
-    margin-bottom: 27px;
+    margin-bottom: 25px;
     font-size: 16px;
 }
 
@@ -635,7 +626,7 @@ footer {
     display: inline-block;
     width: 25%;
     vertical-align: top;
-    padding: 26px 10px 28px;
+    padding: 27px 10px 30px;
     padding-left: 26px;
     box-sizing: border-box;
 }
@@ -645,13 +636,17 @@ footer {
 }
 
 .check:not(:last-child) {
-    margin-bottom: 26px;
+    margin-bottom: 25px;
 }
 
 .check label {
     position: relative;
     margin-left: 40px;
     cursor: pointer;
+}
+
+.one-fourth:nth-child(2n) label {
+    margin-left: 42px;
 }
 
 .check label::before {
@@ -687,6 +682,7 @@ footer {
 }
 
 .filter-range h2 {
+    margin-left: 2px;
     margin-bottom: 11px;
 }
 
@@ -695,21 +691,21 @@ footer {
     height: 32px;
     border: 2px solid #ffffff;
     border-radius: 2px;
-    margin-left: 30px;
+    margin-left: 12px;
     margin-bottom: 20px;
 }
 
 .price-controls label {
     display: inline-block;
     width: 85px;
-    margin-left: 63px;
+    margin-left: 64px;
     line-height: 32px;
     vertical-align: top;
     cursor: pointer;
 }
 
 .price-controls input {
-    width: 60px;
+    width: 40px;
     border: none;
     background: none;
     outline: none;
@@ -728,6 +724,7 @@ footer {
 
 .range-controls {
     position: relative;
+    margin-left: 12px;
     margin-bottom: 32px;
 }
 
@@ -763,13 +760,13 @@ footer {
 }
 
 .range-controls .range-toggle-max {
-    left: 255px;
+    left: 253px;
 }
 
 .filter-range .show-btn {
     display: block;
     margin: 32px auto 33px;
-    padding: 6px 35px;
+    padding: 6px 33px;
     line-height: 20px;
     text-transform: uppercase;
     background: none;
@@ -825,9 +822,13 @@ footer {
 
 .sorting-filters li {
     display: inline-block;
-    padding-left: 38px;
+    padding-left: 32px;
     list-style: none;
     vertical-align: top;
+}
+
+.sorting-filters li:first-child {
+    padding-left: 40px;
 }
 
 .sorting-filters a {
@@ -855,8 +856,8 @@ footer {
 .results .sorting-btns {
     display: inline-block;
     width: 185px;
-    padding: 31.5px 0 29.5px;
-    padding-right: 61px;
+    padding: 31.5px 0 28.5px;
+    padding-right: 66px;
     text-align: right;
     vertical-align: top;
     box-sizing: border-box;
@@ -910,13 +911,14 @@ footer {
     display: inline-block;
     padding-top: 25px;
     padding-bottom: 30px;
-    width: 780px;
+    padding-left: 2px;
+    width: 778px;
     vertical-align: top;
 }
 
 .hotel-title a {
     display: inline-block;
-    margin-bottom: 9px;
+    margin-bottom: 7px;
     line-height: 26px;
     color: inherit;
     text-decoration: none;
@@ -943,7 +945,7 @@ footer {
 
 .hotel-container span {
     display: block;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .hotel-container .btn {
@@ -992,25 +994,29 @@ footer {
 .ratio-block {
     float: right;
     width: 185px;
-    padding-top: 26px;
+    padding-top: 28px;
 }
 
 .ratio-block .stars {
     float: right;
-    margin-right: 68px;
-    margin-bottom: 45px;
+    margin-right: 71px;
+    margin-bottom: 43px;
     font-size: 18px;
     color: #81b3d2;
 }
 
 .stars .icon-star {
     padding: 0;
-    margin-left: -8px;
+    margin-left: 1px;
+}
+
+.stars .icon-star::before {
+    margin: 0;
 }
 
 .ratio-block .ratio {
     float: right;
-    padding: 3px 12px;
+    padding: 3px 13px;
     margin-right: 72px;
     background: #f2f2f2;
 }

@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <title>Страница поиска: Седона</title>
     <link href="css/normalize.css" rel="stylesheet">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style-mini.css" rel="stylesheet">
     <link href='https://fonts.googleapis.com/css?family=PT+Sans:400,700&subset=latin,cyrillic' rel='stylesheet' type='text/css'>
   </head>
   <body>
+  <div class="cover">
     <header>
       <ul class="main-navigation">
-        <li>
+        <li class="left">
           <a href="#">Информация</a>
         </li><!--
-     --><li>
+     --><li class="left">
           <a href="#">Фото и видео</a>
         </li><!--
      --><li class="header-logo">
@@ -21,10 +22,10 @@
             <img src="img/logo-small.png" width="138" height="70" alt="Седона">
           </a>
         </li><!--
-     --><li>
-          <a href="#">Карта штата</a>
+     --><li class="right">
+          <a href="./map.html">Карта штата</a>
         </li><!--
-     --><li>
+     --><li class="right">
           <a class="current" href="./catalog.html">Гостиницы</a>
         </li>
       </ul>
@@ -40,7 +41,7 @@
             </div>
             <div class="check">
               <input type="checkbox" id="parking" name="parking-place">
-              <label for="parking">Паркинг</label>
+              <label for="parking">Парковка</label>
             </div>
             <div class="check">
               <input type="checkbox" id="wi-fi" name="internet">
@@ -64,7 +65,7 @@
           </div><!--
        --><div class="two-fourth clearfix">
             <div class="filter-range">
-              <h2>Стоимость в сутки(Р):</h2>
+              <h2>Стоимость в сутки (Р):</h2>
               <div class="price-controls">
                 <label class="min-price">
                   От <input type="text" name="min-price" value="0">
@@ -122,11 +123,11 @@
           </h1>
           <div class="hotel-type">
             <span>Гостиница</span>
-            <a class="more-btn" href="#">Подробнее</a>
+            <a class="btn more-btn" href="#">Подробнее</a>
           </div><!--
        --><div class="reserve">
             <span>От 3500 р.</span>
-            <a class="reserve-btn" href="#">Забронировать</a>
+            <a class="btn reserve-btn" href="#">Забронировать</a>
           </div>
         </div><!--
      --><div class="ratio-block">
@@ -149,11 +150,11 @@
           </h1>
           <div class="hotel-type">
             <span>Мотель</span>
-            <a class="more-btn" href="#">Подробнее</a>
+            <a class="btn more-btn" href="#">Подробнее</a>
           </div><!--
        --><div class="reserve">
             <span>От 2000 р.</span>
-            <a class="reserve-btn" href="#">Забронировать</a>
+            <a class="btn reserve-btn" href="#">Забронировать</a>
           </div>
         </div><!--
      --><div class="ratio-block">
@@ -174,11 +175,11 @@
           </h1>
           <div class="hotel-type">
             <span>Апартаменты</span>
-            <a class="more-btn" href="#">Подробнее</a>
+            <a class="btn more-btn" href="#">Подробнее</a>
           </div><!--
        --><div class="reserve">
             <span>От 4000 р.</span>
-            <a class="reserve-btn" href="#">Забронировать</a>
+            <a class="btn reserve-btn" href="#">Забронировать</a>
           </div>
         </div><!--
      --><div class="ratio-block clearfix">
@@ -205,5 +206,6 @@
         <a class="sprite academy" href="https://htmlacademy.ru/">HTML academy</a>
       </div>
     </footer>
+    </div>
   </body>
 </html>
